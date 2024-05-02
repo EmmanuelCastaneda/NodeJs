@@ -1,0 +1,59 @@
+###
+POST Http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Neymar Camilo",
+    "age":"20",
+    "email":"CamiloN@gmail.com"
+}
+
+###
+POST Http://localhost:3000/api/guardias HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Laura Rondal",
+    "age":"23",
+    "contacto":"3514250864"
+}
+
+
+
+###
+GET http://localhost:3000/api/users HTTP/1.1
+
+###
+GET http://localhost:3000/api/guardias HTTP/1.1
+
+###
+GET http://localhost:3000/api/users/66331c12b412e10b7c9246ae HTTP/1.1
+
+###
+GET http://localhost:3000/api/guardias/66332b6b915cb8faf5b82b68 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/users/66331c5bb412e10b7c9246b2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Andres Rodolfo",
+    "age":"34",
+    "email":"RodolfoAn@gmail.com"
+}
+
+###
+PUT http://localhost:3000/api/guardias/66332b6b915cb8faf5b82b68 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Andrea Jennifer",
+    "age":"18",
+    "contacto":"3145394823"
+}
+
+###
+DELETE http://localhost:3000/api/users/66331c3eb412e10b7c9246b0 HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/guardias/66332e2e4532defe249ae05f HTTP/1.1
